@@ -6,6 +6,6 @@ data:
   toppings: |-
     {{- range .Values.pizzaToppings }}
     - {{ . | title | quote }}
-    - {{ .Values.my_number }}
+    - {{ $.Values.my_number }}
     {{- end }}
 
