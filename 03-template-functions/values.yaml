@@ -1,6 +1,6 @@
 my_number: 100
 my_name: john
 configmapData:
-  x: 1100
-  y: 2000
+  x1: 1100
+  y1: 2000
 
