@@ -6,6 +6,7 @@ data:
   toppings: |-
     {{- range .Values.pizzaToppings }}
     - {{ . | title | quote }}
-    - {{ $.Values.my_number }}
+    - {{ .Values.my_number }}
     {{- end }}
 
+# .Values inside the loop, Need to change that to $.Values
