@@ -19,8 +19,8 @@ kind: ConfigMap
 metadata:
   name: helm-02
 data:
-{{ if eq (int .Values.my_number) 100 }}
+{{- if eq (int .Values.my_number) 100 }}
   my_number_if: {{ quote .Values.my_number }}
-{{ end }}
+{{- end }}
   x: 2000
 #
