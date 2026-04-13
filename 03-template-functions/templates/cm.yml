@@ -5,6 +5,7 @@ metadata:
 data:
   my_number: {{ quote .Values.my_number }}
   my_number1: {{ .Values.my_number | quote }}
+  my_name: {{ .Values.my_name | upper }}
 
 
 
