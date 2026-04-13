@@ -8,7 +8,7 @@ data:
   chart: {{ .Chart.Name }}-{{ .Chart.Version }}
   template: {{ .Template.Name }}
   code: |
-{{ .Files.Get "templates/sample.conf" | nindent 4  }}
+{{ .Files.Get "files/sample.conf" | nindent 4  }}
 
 
 
