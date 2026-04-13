@@ -7,6 +7,9 @@ data:
   release_service: {{ .Release.Service }}
   chart: {{ .Chart.Name }}-{{ .Chart.Version }}
   template: {{ .Template.Name }}
+  code: |
+    {{ .Files.Get "templates/sample.conf" }}
+
 
 
 #
