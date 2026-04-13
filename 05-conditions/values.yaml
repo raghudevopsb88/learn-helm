@@ -4,6 +4,4 @@ configmapData:
   x1: 1100
   y1: 2000
 
-cm:
-  enabled: true
 
