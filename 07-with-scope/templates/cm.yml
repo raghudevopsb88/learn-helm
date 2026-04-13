@@ -4,8 +4,6 @@ metadata:
   name: helm-02
 data:
   x: 100
-#   drink: {{ .Values.favorite.drink }}
-#   food: {{ .Values.favorite.food }}
   {{- with .Values.favorite }}
   drink: {{ .drink | default "tea" | quote }}
   food: {{ .food | upper | quote }}
